@@ -25,3 +25,14 @@ To install `NHTAshinypackage`, you can use the following command in R:
 ``` 
 remotes::install_github("annagroot/NHTAshinypackage")
 ```
+
+## Setting the NHTA theme
+
+```
+theme_NHTA <- bs_theme(version = 5,
+                      bg = "#f8f9fa", fg = "#000000",  # Ensure both background and foreground colors are set
+                      primary = "#4C8187", secondary = "#214E70",
+                      base_font = font_google("Questrial"), 
+                      heading_font = font_google("Questrial"), 
+)
+```
