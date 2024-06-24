@@ -3,7 +3,7 @@ title: "NHTA Shiny package"
 output: html_document
 ---
 
-# Introduction
+# Introduction to NHTAshinypackage
 
 Welcome to `NHTAshinypackage`, an R package dedicated to the facilitation of NHTA Shiny apps in R.
 
