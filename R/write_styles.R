@@ -10,9 +10,10 @@
 #' If it does not exist, the function creates it and then writes the `styles.css` file with the specified colors.
 #' If the `styles.css` file already exists, the function appends the new styles to it.
 #' @examples
+#' \dontrun{
 #' write_styles_css(primary = "#FC1921", secondary = "#808284")
+#' }
 #' @export
-
 write_styles_css <- function(primary, secondary) {
   # Validate HEX codes (basic validation)
   if (!grepl("^#[0-9A-Fa-f]{6}$", primary)) {
@@ -50,12 +51,12 @@ write_styles_css <- function(primary, secondary) {
   # Define the path to the styles.css file
   css_file_path <- file.path(www_dir, "styles.css")
 
-  # Check if the styles.css file exists and write or append the CSS content
+  # Write or append the CSS content to styles.css
   if (file.exists(css_file_path)) {
-    writeLines(css_content, css_file_path, append = TRUE)
+    cat(css_content, file = css_file_path, append = TRUE)
     message("New styles have been appended to the existing styles.css in the /www directory.")
   } else {
-    writeLines(css_content, css_file_path)
+    cat(css_content, file = css_file_path)
     message("styles.css has been written to the /www directory with primary and secondary colors.")
   }
 }
