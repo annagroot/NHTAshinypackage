@@ -5,7 +5,7 @@ output: html_document
 
 # Introduction
 
-Welcome to `NHTA-package`, an R package dedicated to the facilitation of NHTA Shiny apps in R.
+Welcome to `NHTAshinypackage`, an R package dedicated to the facilitation of NHTA Shiny apps in R.
 
 ## Features
 
@@ -19,9 +19,9 @@ Welcome to `NHTA-package`, an R package dedicated to the facilitation of NHTA Sh
 
 ## Getting Started
 
-To install `NHTA-package`, you can use the following command in R:
+To install `NHTAshinypackage`, you can use the following command in R:
 
 
 ``` 
-remotes::install_github("annagroot/NHTA-package")
+remotes::install_github("annagroot/NHTAshinypackage")
 ```
