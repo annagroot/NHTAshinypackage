@@ -12,6 +12,7 @@
 #' @examples
 #' write_styles_css(primary = "#FC1921", secondary = "#808284")
 #' @export
+
 write_styles_css <- function(primary, secondary) {
   # Validate HEX codes (basic validation)
   if (!grepl("^#[0-9A-Fa-f]{6}$", primary)) {
